@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("GT-America-Thai-Looped-VF") format("ttf");
+}
+body {
+    font-family: "MyCustomFont", sans-serif;
+    text-align: center;
+    background-color: #eeece0;
+    color: #7e7c56;
+}
+
+h1 {
+    color: #7e7c56;
+}
+
+h3 {
+    color: #7e7c56;
+}
+
+.calculator {
+    background-color: #f9f8f4;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #474931;
+    display: inline-block;
+}
+
+label,
+input,
+button {
+    display: table-cell;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #474931;
+    color: #c79747;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7e7c56;
+}
+
+.weight,
+.height {
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 4px #474931;
+    background-color: #f9f8f4;
+    color: #c79747;
+}
+
+::placeholder {
+    color: #c79747;
+    opacity: 50%;
+}
