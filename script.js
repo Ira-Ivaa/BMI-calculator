@@ -7,13 +7,13 @@ function getUserData() {
     let weight = parseFloat(weightInput.value);
     let height = parseFloat(heightInput.value);
 
-    if (isNaN(weight)) {
+    if (isNaN(weight) || weight === 0) {
         bmiDiv.innerHTML = "Enter your weight";
         categoryDiv.innerHTML = "";
         weightInput.focus();
         return null;
     }
-    if (isNaN(height)) {
+    if (isNaN(height || height === 0)) {
         bmiDiv.innerHTML = "Enter your height";
         categoryDiv.innerHTML = "";
         heightInput.focus();
