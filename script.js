@@ -13,7 +13,7 @@ function getUserData() {
         weightInput.focus();
         return null;
     }
-    if (isNaN(height || height === 0)) {
+    if (isNaN(height) || height === 0) {
         bmiDiv.innerHTML = "Enter your height";
         categoryDiv.innerHTML = "";
         heightInput.focus();
